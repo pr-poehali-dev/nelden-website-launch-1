@@ -19,7 +19,7 @@ export default function About() {
           <div className="order-2 lg:order-1">
             <div className="inline-block mb-8">
               <h2 className="text-5xl font-bold text-primary mb-4 relative pb-6">
-                Nelden в России
+                NELDEN в России
                 <span className="absolute bottom-0 left-0 w-24 h-1 bg-accent rounded-full"></span>
               </h2>
             </div>

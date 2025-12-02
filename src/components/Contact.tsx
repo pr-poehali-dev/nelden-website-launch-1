@@ -47,8 +47,11 @@ export default function Contact() {
           <div>
             <div className="mb-10">
               <h3 className="text-3xl font-bold text-primary mb-4">Контакты</h3>
-              <p className="text-lg text-foreground leading-relaxed">
-                Официальное представительство Nelden Industry в России
+              <p className="text-base text-foreground leading-relaxed mb-4">
+                ПРЕДСТАВИТЕЛЬСТВО ОБЩЕСТВА С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "НЕЛДЕН ИНДАСТРИ С.Р.Л." В ГОРОДЕ МОСКВЕ
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                ИНН 9909538392, КПП 774792001
               </p>
             </div>
 
@@ -59,7 +62,7 @@ export default function Contact() {
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-primary mb-2 text-lg">Адрес офиса</h4>
-                  <p className="text-foreground leading-relaxed">Москва, ул. Промышленная, 15, бизнес-центр "Технопарк"</p>
+                  <p className="text-foreground leading-relaxed">Россия, 125252, г. Москва, проезд Березовой Рощи, д. 12, каб. 689</p>
                 </div>
               </div>
 
@@ -79,7 +82,7 @@ export default function Contact() {
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-primary mb-2 text-lg">Email</h4>
-                  <a href="mailto:info@nelden-russia.ru" className="text-foreground hover:text-accent transition-colors text-lg font-semibold">info@nelden-russia.ru</a>
+                  <a href="mailto:nelden@internet.ru" className="text-foreground hover:text-accent transition-colors text-lg font-semibold">nelden@internet.ru</a>
                 </div>
               </div>
 

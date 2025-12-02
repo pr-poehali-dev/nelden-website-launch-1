@@ -15,14 +15,16 @@ export default function Footer() {
           <div>
             <div className="mb-6">
               <img 
-                src="https://cdn.poehali.dev/files/2bccf290-dd21-4d23-b5cf-6ed2e8ad0414.png" 
-                alt="Nelden Logo" 
-                className="h-16 w-auto mb-2"
+                src="https://cdn.poehali.dev/files/ad869417-b707-41c5-a2a1-208a80d75e7a.png" 
+                alt="Nelden Industry" 
+                className="h-12 w-auto mb-4 brightness-0 invert"
               />
-              <div className="text-lg font-bold">RUSSIA</div>
             </div>
-            <p className="text-gray-300 mb-6">
-              Официальное представительство Nelden Industry в России. Качественное оборудование и профессиональный сервис.
+            <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+              ПРЕДСТАВИТЕЛЬСТВО ООО "НЕЛДЕН ИНДАСТРИ С.Р.Л." В ГОРОДЕ МОСКВЕ
+            </p>
+            <p className="text-gray-400 mb-6 text-xs">
+              ИНН 9909538392, КПП 774792001
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
@@ -102,23 +104,29 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start space-x-2">
-                <Icon name="MapPin" size={20} className="mt-1 flex-shrink-0" />
-                <span>Москва, ул. Промышленная, 15</span>
+                <Icon name="MapPin" size={18} className="mt-1 flex-shrink-0 text-accent" />
+                <span className="text-sm leading-relaxed">Россия, 125252, г. Москва,<br />проезд Березовой Рощи, д. 12, каб. 689</span>
               </li>
               <li className="flex items-start space-x-2">
-                <Icon name="Phone" size={20} className="mt-1 flex-shrink-0" />
-                <span>+7 (495) 123-45-67</span>
+                <Icon name="Phone" size={18} className="mt-1 flex-shrink-0 text-accent" />
+                <a href="tel:+74951234567" className="text-sm hover:text-accent transition-colors">+7 (495) 123-45-67</a>
               </li>
               <li className="flex items-start space-x-2">
-                <Icon name="Mail" size={20} className="mt-1 flex-shrink-0" />
-                <span>info@nelden-russia.ru</span>
+                <Icon name="Mail" size={18} className="mt-1 flex-shrink-0 text-accent" />
+                <a href="mailto:nelden@internet.ru" className="text-sm hover:text-accent transition-colors">nelden@internet.ru</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Nelden Industry Russia. Все права защищены.</p>
+        <div className="border-t border-white/10 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+            <p>&copy; {new Date().getFullYear()} NELDEN INDUSTRY S.R.L. Все права защищены.</p>
+            <div className="flex items-center gap-2">
+              <Icon name="MapPin" size={14} className="text-accent" />
+              <span className="text-xs">Made in Italy</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
