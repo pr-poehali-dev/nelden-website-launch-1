@@ -27,112 +27,123 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-card">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl font-bold text-primary mb-4 inline-block relative pb-4">
-            Свяжитесь с нами
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-accent"></span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+    <section id="contact" className="py-24 bg-gradient-to-br from-card via-background to-card relative overflow-hidden">
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16">
+          <div className="inline-block">
+            <h2 className="text-5xl font-bold text-primary mb-4 relative pb-6">
+              Свяжитесь с нами
+              <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-accent rounded-full"></span>
+            </h2>
+          </div>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-6 leading-relaxed">
             Оставьте заявку на сервисное обслуживание, запчасти или консультацию по оборудованию
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="animate-fade-in">
-            <h3 className="text-2xl font-bold text-primary mb-6">Контакты</h3>
-            <p className="text-foreground mb-8">
-              Официальное представительство Nelden Industry в России
-            </p>
+        <div className="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
+          <div>
+            <div className="mb-10">
+              <h3 className="text-3xl font-bold text-primary mb-4">Контакты</h3>
+              <p className="text-lg text-foreground leading-relaxed">
+                Официальное представительство Nelden Industry в России
+              </p>
+            </div>
 
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-                  <Icon name="MapPin" className="text-accent" size={24} />
+              <div className="group flex items-start space-x-5 p-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-accent/5 hover:to-transparent transition-all duration-300 border-2 border-transparent hover:border-accent/20">
+                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+                  <Icon name="MapPin" className="text-accent" size={26} />
                 </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Адрес офиса</h4>
-                  <p className="text-foreground">Москва, ул. Промышленная, 15, бизнес-центр "Технопарк"</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-                  <Icon name="Phone" className="text-accent" size={24} />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Телефон</h4>
-                  <p className="text-foreground">+7 (495) 123-45-67</p>
+                <div className="flex-1">
+                  <h4 className="font-bold text-primary mb-2 text-lg">Адрес офиса</h4>
+                  <p className="text-foreground leading-relaxed">Москва, ул. Промышленная, 15, бизнес-центр "Технопарк"</p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-                  <Icon name="Mail" className="text-accent" size={24} />
+              <div className="group flex items-start space-x-5 p-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-accent/5 hover:to-transparent transition-all duration-300 border-2 border-transparent hover:border-accent/20">
+                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+                  <Icon name="Phone" className="text-accent" size={26} />
                 </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Email</h4>
-                  <p className="text-foreground">info@nelden-russia.ru</p>
+                <div className="flex-1">
+                  <h4 className="font-bold text-primary mb-2 text-lg">Телефон</h4>
+                  <a href="tel:+74951234567" className="text-foreground hover:text-accent transition-colors text-lg font-semibold">+7 (495) 123-45-67</a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-                  <Icon name="Clock" className="text-accent" size={24} />
+              <div className="group flex items-start space-x-5 p-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-accent/5 hover:to-transparent transition-all duration-300 border-2 border-transparent hover:border-accent/20">
+                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+                  <Icon name="Mail" className="text-accent" size={26} />
                 </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-1">Режим работы</h4>
-                  <p className="text-foreground">Пн-Пт: 9:00 - 18:00<br />Сб-Вс: выходные</p>
+                <div className="flex-1">
+                  <h4 className="font-bold text-primary mb-2 text-lg">Email</h4>
+                  <a href="mailto:info@nelden-russia.ru" className="text-foreground hover:text-accent transition-colors text-lg font-semibold">info@nelden-russia.ru</a>
+                </div>
+              </div>
+
+              <div className="group flex items-start space-x-5 p-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-accent/5 hover:to-transparent transition-all duration-300 border-2 border-transparent hover:border-accent/20">
+                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+                  <Icon name="Clock" className="text-accent" size={26} />
+                </div>
+                <div className="flex-1">
+                  <h4 className="font-bold text-primary mb-2 text-lg">Режим работы</h4>
+                  <p className="text-foreground leading-relaxed">Пн-Пт: 9:00 - 18:00<br />Сб-Вс: выходные</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="animate-fade-in">
-            <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-lg shadow-md">
+          <div>
+            <form onSubmit={handleSubmit} className="space-y-6 bg-white p-10 rounded-2xl shadow-2xl border-2 border-accent/10">
+              <h3 className="text-2xl font-bold text-primary mb-8 text-center">Оставить заявку</h3>
+              
               <div>
-                <Label htmlFor="name" className="text-primary font-semibold">Ваше имя *</Label>
+                <Label htmlFor="name" className="text-primary font-semibold text-base mb-3 block">Ваше имя *</Label>
                 <Input
                   id="name"
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="mt-2"
+                  className="h-12 text-base border-2 focus:border-accent"
+                  placeholder="Иван Иванов"
                 />
               </div>
 
               <div>
-                <Label htmlFor="email" className="text-primary font-semibold">Email *</Label>
+                <Label htmlFor="email" className="text-primary font-semibold text-base mb-3 block">Email *</Label>
                 <Input
                   id="email"
                   type="email"
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="mt-2"
+                  className="h-12 text-base border-2 focus:border-accent"
+                  placeholder="ivan@company.ru"
                 />
               </div>
 
               <div>
-                <Label htmlFor="phone" className="text-primary font-semibold">Телефон *</Label>
+                <Label htmlFor="phone" className="text-primary font-semibold text-base mb-3 block">Телефон *</Label>
                 <Input
                   id="phone"
                   type="tel"
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="mt-2"
+                  className="h-12 text-base border-2 focus:border-accent"
+                  placeholder="+7 (999) 123-45-67"
                 />
               </div>
 
               <div>
-                <Label htmlFor="service" className="text-primary font-semibold">Тип услуги</Label>
+                <Label htmlFor="service" className="text-primary font-semibold text-base mb-3 block">Тип услуги</Label>
                 <Select
                   value={formData.service}
                   onValueChange={(value) => setFormData({ ...formData, service: value })}
                 >
-                  <SelectTrigger className="mt-2">
+                  <SelectTrigger className="h-12 text-base border-2 focus:border-accent">
                     <SelectValue placeholder="Выберите услугу" />
                   </SelectTrigger>
                   <SelectContent>
@@ -146,18 +157,20 @@ export default function Contact() {
               </div>
 
               <div>
-                <Label htmlFor="message" className="text-primary font-semibold">Сообщение</Label>
+                <Label htmlFor="message" className="text-primary font-semibold text-base mb-3 block">Сообщение</Label>
                 <Textarea
                   id="message"
                   rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="mt-2"
+                  className="text-base border-2 focus:border-accent resize-none"
+                  placeholder="Опишите ваш запрос..."
                 />
               </div>
 
-              <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-white font-semibold">
+              <Button type="submit" size="lg" className="w-full h-14 bg-accent hover:bg-accent/90 text-white font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300">
                 Отправить заявку
+                <Icon name="Send" size={20} className="ml-2" />
               </Button>
             </form>
           </div>
