@@ -67,7 +67,7 @@ export default function Hero() {
               <div className="w-20 h-20 mx-auto mb-3 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/20 transition-colors">
                 <Icon name="Users" size={32} className="text-white/90" />
               </div>
-              <div className="text-4xl font-bold mb-2">50+</div>
+              <div className="text-4xl font-bold mb-2">50+ в РФ </div>
               <div className="text-sm uppercase tracking-wider opacity-80">Клиентов</div>
             </div>
             <div className="text-center group hover:scale-110 transition-transform duration-300 animate-fade-in" style={{ animationDelay: '0.1s' }}>
