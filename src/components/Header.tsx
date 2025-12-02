@@ -32,17 +32,17 @@ export default function Header() {
         <div className={`flex items-center justify-between transition-all duration-300 ${
           scrolled ? 'h-16' : 'h-20'
         }`}>
-          <div className="flex items-center space-x-3 group cursor-pointer" onClick={() => scrollToSection('hero')}>
+          <div className="flex items-center space-x-2 md:space-x-3 group cursor-pointer" onClick={() => scrollToSection('hero')}>
             <img 
               src="https://cdn.poehali.dev/files/ad869417-b707-41c5-a2a1-208a80d75e7a.png" 
               alt="Nelden Industry" 
               className={`transition-all duration-300 group-hover:scale-110 ${
-                scrolled ? 'h-8' : 'h-12'
+                scrolled ? 'h-6 md:h-8' : 'h-9 md:h-12'
               }`}
             />
             <div className="flex flex-col">
-              <span className="text-xs text-primary/60 font-semibold uppercase tracking-wider">Official</span>
-              <span className="text-sm font-bold text-primary">RUSSIA</span>
+              <span className="text-[10px] md:text-xs text-primary/60 font-semibold uppercase tracking-wider">Official</span>
+              <span className="text-xs md:text-sm font-bold text-primary">RUSSIA</span>
             </div>
           </div>
 
@@ -81,23 +81,27 @@ export default function Header() {
         </div>
 
         {mobileMenuOpen && (
-          <nav className="md:hidden pb-4 animate-fade-in">
+          <nav className="md:hidden pb-6 pt-4 animate-fade-in border-t border-accent/10 mt-4">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('hero')} className="font-semibold text-sm uppercase text-foreground hover:text-accent transition-colors text-left">
+              <button onClick={() => scrollToSection('hero')} className="font-semibold text-base uppercase text-foreground hover:text-accent transition-colors text-left py-2 px-3 hover:bg-accent/5 rounded-lg">
                 Главная
               </button>
-              <button onClick={() => scrollToSection('about')} className="font-semibold text-sm uppercase text-foreground hover:text-accent transition-colors text-left">
+              <button onClick={() => scrollToSection('about')} className="font-semibold text-base uppercase text-foreground hover:text-accent transition-colors text-left py-2 px-3 hover:bg-accent/5 rounded-lg">
                 О компании
               </button>
-              <button onClick={() => scrollToSection('services')} className="font-semibold text-sm uppercase text-foreground hover:text-accent transition-colors text-left">
+              <button onClick={() => scrollToSection('services')} className="font-semibold text-base uppercase text-foreground hover:text-accent transition-colors text-left py-2 px-3 hover:bg-accent/5 rounded-lg">
                 Сервис
               </button>
-              <button onClick={() => scrollToSection('equipment')} className="font-semibold text-sm uppercase text-foreground hover:text-accent transition-colors text-left">
+              <button onClick={() => scrollToSection('equipment')} className="font-semibold text-base uppercase text-foreground hover:text-accent transition-colors text-left py-2 px-3 hover:bg-accent/5 rounded-lg">
                 Оборудование
               </button>
-              <button onClick={() => scrollToSection('contact')} className="font-semibold text-sm uppercase text-foreground hover:text-accent transition-colors text-left">
+              <Button 
+                onClick={() => scrollToSection('contact')} 
+                className="w-full bg-accent hover:bg-accent/90 text-white font-semibold text-base py-6 mt-2"
+              >
+                <Icon name="Mail" size={18} className="mr-2" />
                 Контакты
-              </button>
+              </Button>
             </div>
           </nav>
         )}
