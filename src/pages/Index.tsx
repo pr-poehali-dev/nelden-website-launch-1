@@ -5,7 +5,6 @@ import Services from '@/components/Services';
 import Equipment from '@/components/Equipment';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import FloatingWidgets from '@/components/FloatingWidgets';
 
 const Index = () => {
   return (
@@ -17,7 +16,6 @@ const Index = () => {
       <Equipment />
       <Contact />
       <Footer />
-      <FloatingWidgets />
     </div>
   );
 };
