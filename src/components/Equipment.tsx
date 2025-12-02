@@ -22,7 +22,7 @@ export default function Equipment() {
         { label: 'Рабочее давление:', value: 'до 8 бар' },
         { label: 'Материалы:', value: 'AISI 304/316 нержавеющая сталь' },
       ],
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/d9653f85-55b8-4d08-b256-f226bc52710b.jpg',
     },
     {
       id: 'urano',
@@ -35,7 +35,7 @@ export default function Equipment() {
         { label: 'Система Neck Handling:', value: 'для ПЭТ бутылок' },
         { label: 'Сертификация:', value: 'PED, CE, Washable версия' },
       ],
-      image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/9b47bd33-6cda-40a8-bfdc-333ab878f8dd.jpg',
     },
     {
       id: 'giove',
@@ -48,7 +48,7 @@ export default function Equipment() {
         { label: 'Горячий розлив:', value: 'с рециркуляцией продукта' },
         { label: 'Конфигурация:', value: 'ULTRA CLEAN с HEPA фильтрами' },
       ],
-      image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/508c5e85-8833-4674-bd63-584c820bade7.jpg',
     },
     {
       id: 'engineering',
@@ -61,7 +61,7 @@ export default function Equipment() {
         { label: 'Доп. оборудование:', value: 'депаллетайзеры, конвейеры, CIP системы' },
         { label: 'Проекты:', value: 'мобильные линии, модернизация' },
       ],
-      image: 'https://images.unsplash.com/photo-1586864387789-628af9feed72?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/9b47bd33-6cda-40a8-bfdc-333ab878f8dd.jpg',
     },
   ];
 

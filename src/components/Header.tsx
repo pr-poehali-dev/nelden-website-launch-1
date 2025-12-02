@@ -17,9 +17,14 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">
-              NELDEN<span className="text-accent">RUSSIA</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="https://cdn.poehali.dev/files/d576aa3c-28ee-46d1-b306-a1e567aa8fa9.png" 
+              alt="Nelden Logo" 
+              className="h-12 w-auto"
+            />
+            <div className="text-xl font-bold text-foreground">
+              RUSSIA
             </div>
           </div>
 

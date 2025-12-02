@@ -13,25 +13,25 @@ export default function Services() {
     {
       title: 'Техническое обслуживание',
       description: 'Плановое и внеплановое ТО оборудования, диагностика, регулировка и настройка для поддержания максимальной производительности.',
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/08724b16-f90f-4814-908f-ebaf7ee67972.jpg',
       action: 'Заказать ТО',
     },
     {
       title: 'Ремонт оборудования',
       description: 'Качественный ремонт любой сложности: от замены изношенных деталей до восстановления сложных узлов и систем.',
-      image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/508c5e85-8833-4674-bd63-584c820bade7.jpg',
       action: 'Вызвать мастера',
     },
     {
       title: 'Поставка запчастей',
       description: 'Оригинальные запчасти для оборудования Nelden с доставкой со склада в Москве или прямыми поставками из Италии.',
-      image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=800&auto=format&fit=crop',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/d44dfc4c-8888-4e4b-8c12-33a5be99ecce.jpg',
       action: 'Запросить запчасти',
     },
     {
       title: 'Модернизация линий',
       description: 'Увеличение производительности, установка новых модулей, автоматизация процессов и интеграция с существующими системами.',
-      image: 'https://images.unsplash.com/photo-1586864387789-628af9feed72?q=80&w=800&auto=format&fit=crop',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/9b47bd33-6cda-40a8-bfdc-333ab878f8dd.jpg',
       action: 'Обсудить проект',
     },
   ];

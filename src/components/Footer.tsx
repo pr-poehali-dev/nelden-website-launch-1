@@ -13,8 +13,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="text-2xl font-bold mb-6">
-              NELDEN<span className="text-accent">RUSSIA</span>
+            <div className="mb-6">
+              <img 
+                src="https://cdn.poehali.dev/files/2bccf290-dd21-4d23-b5cf-6ed2e8ad0414.png" 
+                alt="Nelden Logo" 
+                className="h-16 w-auto mb-2"
+              />
+              <div className="text-lg font-bold">RUSSIA</div>
             </div>
             <p className="text-gray-300 mb-6">
               Официальное представительство Nelden Industry в России. Качественное оборудование и профессиональный сервис.

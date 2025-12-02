@@ -44,7 +44,7 @@ export default function About() {
 
           <div className="animate-fade-in">
             <img
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1000&auto=format&fit=crop"
+              src="https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/508c5e85-8833-4674-bd63-584c820bade7.jpg"
               alt="Оборудование Nelden"
               className="rounded-lg shadow-xl w-full"
             />

@@ -13,7 +13,7 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center text-white pt-20"
       style={{
-        backgroundImage: 'linear-gradient(rgba(10, 36, 99, 0.85), rgba(10, 36, 99, 0.9)), url(https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop)',
+        backgroundImage: 'linear-gradient(rgba(56, 138, 136, 0.85), rgba(56, 138, 136, 0.9)), url(https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/9b47bd33-6cda-40a8-bfdc-333ab878f8dd.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
