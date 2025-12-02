@@ -17,13 +17,44 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: 'Заявка отправлена',
-      description: 'Мы свяжемся с вами в ближайшее время.',
-    });
-    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://functions.poehali.dev/7f3adecd-34d5-42e7-90a2-b210090f4508', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message || formData.service || 'Нет сообщения',
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
+
+      toast({
+        title: 'Заявка отправлена',
+        description: 'Мы свяжемся с вами в ближайшее время.',
+      });
+      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    } catch (error) {
+      toast({
+        title: 'Ошибка отправки',
+        description: 'Попробуйте позже или напишите на nelden@internet.ru',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -162,8 +193,13 @@ export default function Contact() {
                 />
               </div>
 
-              <Button type="submit" size="lg" className="w-full h-14 bg-accent hover:bg-accent/90 text-white font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300">
-                Отправить заявку
+              <Button 
+                type="submit" 
+                size="lg" 
+                disabled={isSubmitting}
+                className="w-full h-14 bg-accent hover:bg-accent/90 text-white font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-50"
+              >
+                {isSubmitting ? 'Отправка...' : 'Отправить заявку'}
                 <Icon name="Send" size={20} className="ml-2" />
               </Button>
             </form>

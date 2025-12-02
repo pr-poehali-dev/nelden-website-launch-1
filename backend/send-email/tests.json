@@ -1,0 +1,38 @@
+{
+  "tests": [
+    {
+      "name": "Handle OPTIONS request",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Send valid contact form",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Иван Иванов",
+        "phone": "+79001234567",
+        "email": "test@example.com",
+        "message": "Тестовое сообщение"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Reject invalid email",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Test",
+        "phone": "123456",
+        "email": "invalid-email",
+        "message": "Test"
+      },
+      "expectedStatus": 500
+    }
+  ]
+}
