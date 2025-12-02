@@ -16,7 +16,7 @@ class ContactRequest(BaseModel):
 
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     '''
-    Business: Send contact form submissions via email
+    Business: Send contact form submissions via email with SMTP
     Args: event - dict with httpMethod, body
           context - object with request_id
     Returns: HTTP response dict
