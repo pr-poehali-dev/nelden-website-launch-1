@@ -57,8 +57,8 @@ export default function Hero() {
               className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold uppercase tracking-wide px-8 py-7 text-base backdrop-blur-sm bg-white/10 hover:scale-105 transition-all duration-300"
               onClick={() => scrollToSection('contact')}
             >
-              <Icon name="Phone" size={20} className="mr-2" />
-              Заказать звонок
+              <Icon name="Mail" size={20} className="mr-2" />
+              Оставить заявку
             </Button>
           </div>
 

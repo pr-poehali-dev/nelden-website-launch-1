@@ -108,12 +108,12 @@ export default function Footer() {
                 <span className="text-sm leading-relaxed">Россия, 125252, г. Москва,<br />проезд Березовой Рощи, д. 12, каб. 689</span>
               </li>
               <li className="flex items-start space-x-2">
-                <Icon name="Phone" size={18} className="mt-1 flex-shrink-0 text-accent" />
-                <a href="tel:+74951234567" className="text-sm hover:text-accent transition-colors">+7 (495) 123-45-67</a>
-              </li>
-              <li className="flex items-start space-x-2">
                 <Icon name="Mail" size={18} className="mt-1 flex-shrink-0 text-accent" />
                 <a href="mailto:nelden@internet.ru" className="text-sm hover:text-accent transition-colors">nelden@internet.ru</a>
+              </li>
+              <li className="flex items-start space-x-2">
+                <Icon name="Clock" size={18} className="mt-1 flex-shrink-0 text-accent" />
+                <span className="text-sm">Прием заявок: 24/7</span>
               </li>
             </ul>
           </div>

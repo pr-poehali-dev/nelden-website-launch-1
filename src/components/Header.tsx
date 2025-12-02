@@ -74,7 +74,7 @@ export default function Header() {
               onClick={() => scrollToSection('contact')} 
               className="ml-4 bg-accent hover:bg-accent/90 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
-              <Icon name="Phone" size={16} className="mr-2" />
+              <Icon name="Mail" size={16} className="mr-2" />
               Контакты
             </Button>
           </nav>

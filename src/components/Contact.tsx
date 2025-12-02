@@ -68,16 +68,6 @@ export default function Contact() {
 
               <div className="group flex items-start space-x-5 p-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-accent/5 hover:to-transparent transition-all duration-300 border-2 border-transparent hover:border-accent/20">
                 <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
-                  <Icon name="Phone" className="text-accent" size={26} />
-                </div>
-                <div className="flex-1">
-                  <h4 className="font-bold text-primary mb-2 text-lg">Телефон</h4>
-                  <a href="tel:+74951234567" className="text-foreground hover:text-accent transition-colors text-lg font-semibold">+7 (495) 123-45-67</a>
-                </div>
-              </div>
-
-              <div className="group flex items-start space-x-5 p-6 rounded-xl bg-white hover:bg-gradient-to-r hover:from-accent/5 hover:to-transparent transition-all duration-300 border-2 border-transparent hover:border-accent/20">
-                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
                   <Icon name="Mail" className="text-accent" size={26} />
                 </div>
                 <div className="flex-1">
@@ -91,8 +81,9 @@ export default function Contact() {
                   <Icon name="Clock" className="text-accent" size={26} />
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-bold text-primary mb-2 text-lg">Режим работы</h4>
-                  <p className="text-foreground leading-relaxed">Пн-Пт: 9:00 - 18:00<br />Сб-Вс: выходные</p>
+                  <h4 className="font-bold text-primary mb-2 text-lg">Прием заявок</h4>
+                  <p className="text-foreground leading-relaxed font-semibold">24/7</p>
+                  <p className="text-sm text-muted-foreground mt-1">Круглосуточно, без выходных</p>
                 </div>
               </div>
             </div>
