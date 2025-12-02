@@ -5,6 +5,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
+import { toast as sonnerToast } from 'sonner';
 import Icon from '@/components/ui/icon';
 
 export default function Contact() {
@@ -41,16 +42,15 @@ export default function Contact() {
         throw new Error('Failed to send email');
       }
 
-      toast({
-        title: 'Заявка отправлена',
-        description: 'Мы свяжемся с вами в ближайшее время.',
+      sonnerToast.success('Заявка успешно отправлена!', {
+        description: '✉️ Мы получили ваше сообщение и свяжемся с вами в ближайшее время.',
+        duration: 5000,
       });
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
     } catch (error) {
-      toast({
-        title: 'Ошибка отправки',
-        description: 'Попробуйте позже или напишите на nelden@internet.ru',
-        variant: 'destructive',
+      sonnerToast.error('Не удалось отправить заявку', {
+        description: '❌ Попробуйте позже или напишите напрямую на nelden@internet.ru',
+        duration: 5000,
       });
     } finally {
       setIsSubmitting(false);
