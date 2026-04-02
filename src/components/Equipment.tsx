@@ -48,7 +48,7 @@ export default function Equipment() {
         { label: 'Горячий розлив:', value: 'с рециркуляцией продукта' },
         { label: 'Конфигурация:', value: 'ULTRA CLEAN с HEPA фильтрами' },
       ],
-      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/508c5e85-8833-4674-bd63-584c820bade7.jpg',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/bucket/00192e67-f668-43fa-8cc0-16adae8ae92c.jpg',
     },
     {
       id: 'engineering',

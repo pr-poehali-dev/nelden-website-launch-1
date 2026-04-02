@@ -28,7 +28,7 @@ export default function Services() {
     {
       title: 'Поставка запчастей',
       description: 'Оригинальные запчасти с доставкой со склада в Москве или из Италии',
-      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/d44dfc4c-8888-4e4b-8c12-33a5be99ecce.jpg',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/bucket/61688a1b-26b7-4350-9df5-b4c065633090.jpg',
       icon: 'Package',
       features: ['100% оригинал', 'Быстрая доставка', 'Наличие на складе'],
     },
