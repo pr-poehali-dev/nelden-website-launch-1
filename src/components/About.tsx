@@ -65,7 +65,7 @@ export default function About() {
               <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-primary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500 animate-pulse-slow"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-primary/10 rounded-2xl group-hover:opacity-0 transition-opacity duration-500"></div>
               <img
-                src="https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/508c5e85-8833-4674-bd63-584c820bade7.jpg"
+                src="https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/bucket/d718a7b9-76fe-4742-b50d-d511f9b87211.JPG"
                 alt="Оборудование Nelden"
                 className="relative rounded-2xl shadow-2xl w-full transform transition-all duration-700 group-hover:scale-[1.03] group-hover:shadow-accent/20"
               />

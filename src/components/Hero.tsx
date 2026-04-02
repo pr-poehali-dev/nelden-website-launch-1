@@ -14,7 +14,7 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center text-white pt-16 md:pt-20 overflow-hidden"
       style={{
-        backgroundImage: 'linear-gradient(rgba(56, 138, 136, 0.85), rgba(56, 138, 136, 0.9)), url(https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/9b47bd33-6cda-40a8-bfdc-333ab878f8dd.jpg)',
+        backgroundImage: 'linear-gradient(rgba(56, 138, 136, 0.85), rgba(56, 138, 136, 0.9)), url(https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/bucket/4410eecb-f9a8-4756-9017-362b74baca59.JPG)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

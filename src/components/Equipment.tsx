@@ -35,7 +35,7 @@ export default function Equipment() {
         { label: 'Система Neck Handling:', value: 'для ПЭТ бутылок' },
         { label: 'Сертификация:', value: 'PED, CE, Washable версия' },
       ],
-      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/9b47bd33-6cda-40a8-bfdc-333ab878f8dd.jpg',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/bucket/1cfb57e9-86e5-4ea2-9d25-1b1d891be649.jpg',
     },
     {
       id: 'giove',
@@ -61,7 +61,7 @@ export default function Equipment() {
         { label: 'Доп. оборудование:', value: 'депаллетайзеры, конвейеры, CIP системы' },
         { label: 'Проекты:', value: 'мобильные линии, модернизация' },
       ],
-      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/9b47bd33-6cda-40a8-bfdc-333ab878f8dd.jpg',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/bucket/51c14aa4-ffb6-4fad-ae70-343f322fba9f.jpg',
     },
   ];
 

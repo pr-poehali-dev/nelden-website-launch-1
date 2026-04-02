@@ -21,7 +21,7 @@ export default function Services() {
     {
       title: 'Ремонт оборудования',
       description: 'Качественный ремонт любой сложности: от замены деталей до восстановления узлов',
-      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/508c5e85-8833-4674-bd63-584c820bade7.jpg',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/bucket/9ba8f4bd-90a9-42d8-909b-b93727be010b.jpg',
       icon: 'Wrench',
       features: ['Выезд 24/7', 'Гарантия', 'Опыт 10+ лет'],
     },
@@ -35,7 +35,7 @@ export default function Services() {
     {
       title: 'Модернизация линий',
       description: 'Увеличение производительности, установка модулей, автоматизация процессов',
-      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/files/9b47bd33-6cda-40a8-bfdc-333ab878f8dd.jpg',
+      image: 'https://cdn.poehali.dev/projects/7974b9bd-0297-4c1b-8ad9-fe09255dd233/bucket/51c14aa4-ffb6-4fad-ae70-343f322fba9f.jpg',
       icon: 'Zap',
       features: ['До +50% скорость', 'Окупаемость 12 мес', 'Под ключ'],
     },
