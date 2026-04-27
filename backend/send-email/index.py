@@ -66,7 +66,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     msg = MIMEMultipart('alternative')
     msg['Subject'] = f'Новая заявка от {contact_req.name}'
     msg['From'] = smtp_user
-    msg['To'] = 'nelden@internet.ru'
+    msg['To'] = 'mail@neldenindustry.ru'
     
     html_body = f"""
     <html>
