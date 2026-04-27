@@ -109,7 +109,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start space-x-2">
                 <Icon name="Mail" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
-                <a href="mailto:nelden@internet.ru" className="text-xs md:text-sm hover:text-accent transition-colors break-all">nelden@internet.ru</a>
+                <a href="mailto:nelden@internet.ru" className="text-xs md:text-sm hover:text-accent transition-colors break-all">mail@neldenindustry.ru</a>
               </li>
               <li className="flex items-start space-x-2">
                 <Icon name="Clock" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
