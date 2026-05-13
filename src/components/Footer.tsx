@@ -13,22 +13,38 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-8 mb-10 md:mb-12">
           <div>
-            <div className="mb-4 md:mb-6">
-              <img 
-                src="https://cdn.poehali.dev/files/ad869417-b707-41c5-a2a1-208a80d75e7a.png" 
-                alt="Nelden Industry" 
-                className="h-10 md:h-12 w-auto mb-3 md:mb-4 brightness-0 invert"
+            <a
+              href="https://www.neldenindustry.it"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mb-4 md:mb-6 group"
+            >
+              <img
+                src="https://cdn.poehali.dev/files/ad869417-b707-41c5-a2a1-208a80d75e7a.png"
+                alt="Nelden Industry"
+                className="h-10 md:h-12 w-auto mb-3 md:mb-4 brightness-0 invert group-hover:opacity-80 transition-opacity"
               />
-            </div>
+            </a>
             <p className="text-gray-300 mb-3 md:mb-4 text-xs md:text-sm leading-relaxed">
               ПРЕДСТАВИТЕЛЬСТВО ООО "НЕЛДЕН ИНДАСТРИ С.Р.Л." В ГОРОДЕ МОСКВЕ
             </p>
             <p className="text-gray-400 mb-4 md:mb-6 text-[11px] md:text-xs">
               ИНН 9909538392, КПП 774792001
             </p>
-            <a href="mailto:info@neldenindustry.ru" className="inline-flex items-center gap-2 w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 hover:bg-accent transition-colors justify-center">
-              <Icon name="Mail" size={18} />
+            <a
+              href="https://www.neldenindustry.it"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-xs md:text-sm text-gray-300 hover:text-accent transition-colors mb-4"
+            >
+              <Icon name="ExternalLink" size={14} className="text-accent" />
+              <span>neldenindustry.it</span>
             </a>
+            <div className="flex">
+              <a href="mailto:info@neldenindustry.ru" className="inline-flex items-center gap-2 w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 hover:bg-accent transition-colors justify-center">
+                <Icon name="Mail" size={18} />
+              </a>
+            </div>
           </div>
 
           <div>

@@ -29,31 +29,38 @@ export default function Header() {
         : 'bg-white shadow-md'
     }`}>
       <div className="container mx-auto px-4">
-        <div className={`flex items-center justify-between transition-all duration-300 ${
+        <div className={`flex items-center justify-between gap-4 transition-all duration-300 ${
           scrolled ? 'h-16' : 'h-20'
         }`}>
-          <div className="flex items-center space-x-2 md:space-x-3 group cursor-pointer" onClick={() => scrollToSection('hero')}>
-            <img 
-              src="https://cdn.poehali.dev/files/ad869417-b707-41c5-a2a1-208a80d75e7a.png" 
-              alt="Nelden Industry" 
-              className={`transition-all duration-300 group-hover:scale-110 ${
-                scrolled ? 'h-6 md:h-8' : 'h-9 md:h-12'
+          <a
+            href="https://www.neldenindustry.it"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-3 group shrink-0"
+            aria-label="Перейти на сайт Nelden Industry"
+          >
+            <img
+              src="https://cdn.poehali.dev/files/ad869417-b707-41c5-a2a1-208a80d75e7a.png"
+              alt="Nelden Industry"
+              className={`transition-all duration-300 group-hover:scale-105 ${
+                scrolled ? 'h-8 md:h-9' : 'h-10 md:h-12'
               }`}
             />
-            <div className="flex flex-col">
-              <span className="text-[10px] md:text-xs text-primary/60 font-semibold uppercase tracking-wider">Official</span>
-              <span className="text-xs md:text-sm font-bold text-primary">RUSSIA</span>
+            <div className="flex flex-col leading-tight">
+              <span className="text-[10px] md:text-xs text-primary/60 font-semibold uppercase tracking-[0.2em]">Official</span>
+              <span className="text-xs md:text-sm font-bold text-primary tracking-wider">RUSSIA</span>
             </div>
-          </div>
+          </a>
 
           <button
-            className="md:hidden"
+            className="md:hidden flex items-center justify-center w-10 h-10"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Меню"
           >
             <Icon name={mobileMenuOpen ? "X" : "Menu"} size={24} className="text-primary" />
           </button>
 
-          <nav className="hidden md:flex items-center space-x-1">
+          <nav className="hidden md:flex items-center gap-1">
             <button onClick={() => scrollToSection('hero')} className="relative px-4 py-2 font-semibold text-sm uppercase text-foreground hover:text-accent transition-all duration-300 group">
               <span className="relative z-10">Главная</span>
               <span className="absolute inset-0 bg-accent/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></span>
