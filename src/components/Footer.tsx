@@ -32,15 +32,23 @@ export default function Footer() {
             <p className="text-gray-400 mb-4 md:mb-6 text-[11px] md:text-xs">
               ИНН 9909538392, КПП 774792001
             </p>
-            <a
-              href="https://www.neldenindustry.it"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs md:text-sm text-gray-300 hover:text-accent transition-colors mb-4"
-            >
-              <Icon name="ExternalLink" size={14} className="text-accent" />
-              <span>neldenindustry.it</span>
-            </a>
+            <div className="mb-4">
+              <p className="text-[11px] md:text-xs text-gray-400 mb-2 uppercase tracking-wider">
+                Официальный сайт производителя
+              </p>
+              <a
+                href="https://www.neldenindustry.it"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm md:text-base font-semibold text-gray-200 hover:text-accent transition-colors group"
+              >
+                <Icon name="ExternalLink" size={14} className="text-accent group-hover:scale-110 transition-transform" />
+                <span>neldenindustry.it</span>
+              </a>
+              <p className="text-[11px] text-gray-500 mt-2 leading-relaxed">
+                Перейти на сайт головной компании в Италии
+              </p>
+            </div>
             <div className="flex">
               <a href="mailto:info@neldenindustry.ru" className="inline-flex items-center gap-2 w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 hover:bg-accent transition-colors justify-center">
                 <Icon name="Mail" size={18} />
