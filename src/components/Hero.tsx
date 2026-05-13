@@ -42,23 +42,14 @@ export default function Hero() {
             Итальянское оборудование для розлива напитков, сервисное обслуживание и поставка оригинальных запчастей для линий URANO, GIOVE и ENGINEERING
           </p>
           
-          <div className="flex flex-col gap-4 md:gap-6 justify-center items-stretch md:items-center px-4 md:flex-row">
+          <div className="flex justify-center px-4">
             <Button
               size="lg"
-              className="w-full md:w-auto bg-accent hover:bg-accent/90 text-white font-semibold uppercase tracking-wide px-6 md:px-8 py-6 md:py-7 text-sm md:text-base shadow-2xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
+              className="bg-white/10 hover:bg-white hover:text-primary text-white font-semibold uppercase tracking-[0.2em] px-10 md:px-14 py-6 md:py-7 text-sm md:text-base border-2 border-white/60 hover:border-white backdrop-blur-sm shadow-2xl hover:scale-105 transition-all duration-300"
               onClick={() => scrollToSection('services')}
             >
               Наши услуги
-              <Icon name="ChevronRight" size={18} className="ml-2 md:w-5 md:h-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="w-full md:w-auto border-2 border-white text-white hover:bg-white hover:text-primary font-semibold uppercase tracking-wide px-6 md:px-8 py-6 md:py-7 text-sm md:text-base backdrop-blur-sm bg-white/10 hover:scale-105 transition-all duration-300"
-              onClick={() => scrollToSection('contact')}
-            >
-              <Icon name="Mail" size={18} className="mr-2 md:w-5 md:h-5" />
-              Оставить заявку
+              <Icon name="ChevronRight" size={18} className="ml-3" />
             </Button>
           </div>
 
