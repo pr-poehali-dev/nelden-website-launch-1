@@ -40,19 +40,17 @@ export default function About() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="group p-4 md:p-5 rounded-xl bg-gradient-to-br from-card to-background border border-border hover:border-accent/30 transition-all duration-500 hover:shadow-xl hover:-translate-y-1 animate-fade-in flex items-start gap-3 md:gap-4"
+                  className="group p-4 md:p-5 rounded-xl bg-gradient-to-br from-card to-background border border-border hover:border-accent/30 transition-all duration-500 hover:shadow-xl hover:-translate-y-1 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent transition-all duration-500">
-                    <Icon name={feature.icon} className="text-accent group-hover:text-white transition-colors duration-500" size={20} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between gap-2 mb-1">
-                      <h4 className="font-bold text-primary text-[13px] md:text-sm leading-tight group-hover:text-accent transition-colors duration-300 break-words hyphens-auto">{feature.title}</h4>
-                      <span className="text-accent font-bold text-[11px] md:text-xs flex-shrink-0 whitespace-nowrap">{feature.stat}</span>
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="w-11 h-11 md:w-12 md:h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent transition-all duration-500">
+                      <Icon name={feature.icon} className="text-accent group-hover:text-white transition-colors duration-500" size={20} />
                     </div>
-                    <p className="text-[11px] md:text-xs text-muted-foreground leading-snug break-words">{feature.description}</p>
+                    <span className="text-accent font-bold text-sm whitespace-nowrap">{feature.stat}</span>
                   </div>
+                  <h4 className="font-bold text-primary text-sm md:text-base leading-tight group-hover:text-accent transition-colors duration-300 mb-1.5 break-words">{feature.title}</h4>
+                  <p className="text-xs md:text-sm text-muted-foreground leading-snug break-words">{feature.description}</p>
                 </div>
               ))}
             </div>
