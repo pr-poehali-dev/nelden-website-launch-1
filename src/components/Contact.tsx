@@ -2,7 +2,7 @@ import Icon from '@/components/ui/icon';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 md:py-32 bg-gradient-to-br from-card via-background to-card relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-24 bg-gradient-to-br from-card via-background to-card relative overflow-hidden">
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute top-0 left-0 w-72 h-72 bg-accent/3 rounded-full blur-3xl pointer-events-none"></div>
 

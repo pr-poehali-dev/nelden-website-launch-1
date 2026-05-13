@@ -69,11 +69,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-6 relative pb-2">
+            <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 relative pb-2">
               Услуги
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-accent"></span>
+              <span className="absolute bottom-0 left-0 w-10 md:w-12 h-0.5 bg-accent"></span>
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2 md:space-y-3">
               <li>
                 <a href="#" className="text-sm md:text-base text-gray-300 hover:text-accent transition-colors">
                   Техническое обслуживание
@@ -98,18 +98,22 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold mb-6 relative pb-2">
+            <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6 relative pb-2">
               Контакты
-              <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-accent"></span>
+              <span className="absolute bottom-0 left-0 w-10 md:w-12 h-0.5 bg-accent"></span>
             </h3>
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-2 md:space-y-3 text-gray-300">
               <li className="flex items-start space-x-2">
                 <Icon name="MapPin" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
-                <span className="text-xs md:text-sm leading-relaxed">Россия, 125252, г. Москва,<br />проезд Березовой Рощи, д. 12, каб. 689</span>
+                <span className="text-xs md:text-sm leading-relaxed">125252, г. Москва,<br />проезд Березовой Рощи, д. 12, каб. 689</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <Icon name="Phone" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
+                <a href="tel:+74951358549" className="text-xs md:text-sm hover:text-accent transition-colors">+7 495 135-85-49</a>
               </li>
               <li className="flex items-start space-x-2">
                 <Icon name="Mail" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
-                <a href="mailto:nelden@internet.ru" className="text-xs md:text-sm hover:text-accent transition-colors break-all">mail@neldenindustry.ru</a>
+                <a href="mailto:nelden@internet.ru" className="text-xs md:text-sm hover:text-accent transition-colors break-words">nelden@internet.ru</a>
               </li>
               <li className="flex items-start space-x-2">
                 <Icon name="Clock" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
