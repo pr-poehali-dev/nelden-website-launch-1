@@ -54,10 +54,10 @@ export default function Contact() {
               </div>
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-3">Email</p>
               <a
-                href="mailto:nelden@internet.ru"
+                href="mailto:info@neldenindustry.ru"
                 className="text-foreground hover:text-accent transition-colors text-base md:text-lg font-semibold"
               >
-                nelden@internet.ru
+                info@neldenindustry.ru
               </a>
             </div>
 

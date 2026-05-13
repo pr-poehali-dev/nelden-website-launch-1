@@ -26,17 +26,9 @@ export default function Footer() {
             <p className="text-gray-400 mb-4 md:mb-6 text-[11px] md:text-xs">
               ИНН 9909538392, КПП 774792001
             </p>
-            <div className="flex space-x-3 md:space-x-4">
-              <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
-                <Icon name="Facebook" size={18} />
-              </a>
-              <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
-                <Icon name="Linkedin" size={18} />
-              </a>
-              <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
-                <Icon name="Mail" size={18} />
-              </a>
-            </div>
+            <a href="mailto:info@neldenindustry.ru" className="inline-flex items-center gap-2 w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 hover:bg-accent transition-colors justify-center">
+              <Icon name="Mail" size={18} />
+            </a>
           </div>
 
           <div>
@@ -113,7 +105,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start space-x-2">
                 <Icon name="Mail" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
-                <a href="mailto:nelden@internet.ru" className="text-xs md:text-sm hover:text-accent transition-colors break-words">nelden@internet.ru</a>
+                <a href="mailto:info@neldenindustry.ru" className="text-xs md:text-sm hover:text-accent transition-colors break-words">info@neldenindustry.ru</a>
               </li>
               <li className="flex items-start space-x-2">
                 <Icon name="Clock" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
