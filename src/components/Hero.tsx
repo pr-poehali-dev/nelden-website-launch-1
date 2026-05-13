@@ -33,9 +33,9 @@ export default function Hero() {
             </div>
           </div>
           
-          <h1 className="text-3xl md:text-6xl font-bold mb-6 md:mb-8 text-white leading-tight px-2">
-            Официальное представительство<br />
-            <span className="text-white/90">NELDEN INDUSTRY в России</span>
+          <h1 className="text-2xl sm:text-3xl md:text-6xl font-bold mb-6 md:mb-8 text-white leading-tight px-2 break-words">
+            Официальное представительство{' '}
+            <span className="text-white/90 block sm:inline">NELDEN INDUSTRY в России</span>
           </h1>
           
           <p className="text-base md:text-2xl mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed font-light px-4">
