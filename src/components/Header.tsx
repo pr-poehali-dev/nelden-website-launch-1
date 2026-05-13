@@ -66,7 +66,7 @@ export default function Header() {
               <span className="absolute inset-0 bg-accent/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></span>
             </button>
             <button onClick={() => scrollToSection('about')} className="relative px-4 py-2 font-semibold text-sm uppercase text-foreground hover:text-accent transition-all duration-300 group">
-              <span className="relative z-10">О компании</span>
+              <span className="relative z-10">компания</span>
               <span className="absolute inset-0 bg-accent/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></span>
             </button>
             <button onClick={() => scrollToSection('services')} className="relative px-4 py-2 font-semibold text-sm uppercase text-foreground hover:text-accent transition-all duration-300 group">
