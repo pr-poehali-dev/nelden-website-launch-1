@@ -40,10 +40,10 @@ export default function Contact() {
               </div>
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-3">Телефон</p>
               <a
-                href="tel:+74951358549"
+                href="tel:+74951358783"
                 className="text-foreground hover:text-accent transition-colors text-lg md:text-xl font-semibold tracking-tight"
               >
-                +7 495 135-85-49
+                +7 495 135-87-83
               </a>
               <p className="text-xs text-muted-foreground mt-3 leading-relaxed">Круглосуточно,<br />без выходных</p>
             </div>

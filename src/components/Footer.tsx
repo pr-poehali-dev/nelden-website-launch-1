@@ -126,7 +126,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start space-x-2">
                 <Icon name="Phone" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
-                <a href="tel:+74951358549" className="text-xs md:text-sm hover:text-accent transition-colors">+7 495 135-85-49</a>
+                <a href="tel:+74951358783" className="text-xs md:text-sm hover:text-accent transition-colors">+7 495 135-87-83</a>
               </li>
               <li className="flex items-start space-x-2">
                 <Icon name="Mail" size={16} className="mt-0.5 md:mt-1 flex-shrink-0 text-accent" />
