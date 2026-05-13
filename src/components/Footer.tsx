@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 
 export default function Footer() {
@@ -134,9 +135,14 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-6 md:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-xs md:text-sm text-gray-400">
             <p className="text-center md:text-left">&copy; {new Date().getFullYear()} NELDEN INDUSTRY S.R.L. Все права защищены.</p>
-            <div className="flex items-center gap-1.5 md:gap-2">
-              <Icon name="MapPin" size={12} className="md:w-3.5 md:h-3.5 text-accent" />
-              <span className="text-[11px] md:text-xs">Made in Italy</span>
+            <div className="flex items-center gap-4 md:gap-6">
+              <Link to="/privacy" className="text-[11px] md:text-xs hover:text-accent transition-colors">
+                Политика конфиденциальности
+              </Link>
+              <div className="flex items-center gap-1.5 md:gap-2">
+                <Icon name="MapPin" size={12} className="md:w-3.5 md:h-3.5 text-accent" />
+                <span className="text-[11px] md:text-xs">Made in Italy</span>
+              </div>
             </div>
           </div>
         </div>
