@@ -47,11 +47,11 @@ export default function About() {
                     <Icon name={feature.icon} className="text-accent group-hover:text-white transition-colors duration-500" size={22} />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-baseline justify-between gap-2 mb-1.5">
-                      <h4 className="font-bold text-primary text-sm md:text-base leading-tight truncate group-hover:text-accent transition-colors duration-300">{feature.title}</h4>
-                      <span className="text-accent font-bold text-xs md:text-sm flex-shrink-0">{feature.stat}</span>
+                    <div className="flex items-start justify-between gap-2 mb-1.5">
+                      <h4 className="font-bold text-primary text-sm md:text-[15px] leading-tight group-hover:text-accent transition-colors duration-300 break-words">{feature.title}</h4>
+                      <span className="text-accent font-bold text-xs md:text-sm flex-shrink-0 whitespace-nowrap">{feature.stat}</span>
                     </div>
-                    <p className="text-xs md:text-sm text-muted-foreground leading-snug">{feature.description}</p>
+                    <p className="text-xs md:text-sm text-muted-foreground leading-snug break-words">{feature.description}</p>
                   </div>
                 </div>
               ))}
